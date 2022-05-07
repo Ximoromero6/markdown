@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <title>Markdown | Write your ideas</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <section class="leftSide">
+                <button class="menu">
+                    <i class="fi fi-rr-menu-dots"></i>
+                </button>
+                <a href="" class="logo">markdown</a>
+                <div class="newPageContainer">
+                    <i class="fi fi-rr-file"></i>
+                    <div class="textNewPage">
+                        <p class="title">Document name</p>
+                        <p class="fileName">welcome.txt</p>
+                    </div>
+                </div>
+            </section>
+            <section class="rightSide">
+                <button class="trash">
+                    <i class="fi fi-rr-trash"></i>
+                </button>
+                <button class="save">
+                    <i class="fi fi-rr-disk"></i>
+                    <p>Save changes</p>
+                </button>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="markdown">
+            <div class="header">
+                <h2>markdown</h2>
+            </div>
+            <textarea id="markdownInput"></textarea>
+        </section>
+        <section id="preview">
+            <div class="header">
+                <h2>preview</h2>
+                <i class="fi fi-rs-eye"></i>
+            </div>
+            <textarea id="markdownPreview" readonly></textarea>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

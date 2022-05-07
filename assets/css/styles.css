@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+/* CSS Reset  */
+@import url("reset.css");
+body {
+  font-family: "Nunito", sans-serif;
+  overflow-y: scroll;
+}
+
+/* Colors */
+button:focus,
+a:focus,
+input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 2px #ff9989;
+          box-shadow: 0 0 0 2px #ff9989;
+}
+
+header {
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+header .container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .leftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .leftSide .menu {
+  width: 80px;
+  height: 80px;
+  border: none;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+header .container .leftSide .menu i {
+  font-size: 22px;
+}
+
+header .container .leftSide .logo {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #6d6d64;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 5px;
+  border-radius: 4px;
+}
+
+header .container .leftSide .newPageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #cccccc;
+  padding: 5px 15px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header .container .leftSide .newPageContainer i {
+  margin-right: 15px;
+  color: #6d6d64;
+}
+
+header .container .leftSide .newPageContainer .textNewPage p {
+  margin: 0;
+}
+
+header .container .leftSide .newPageContainer .textNewPage .title {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+
+header .container .leftSide .newPageContainer .textNewPage .fileName {
+  color: #6d6d64;
+}
+
+header .container .leftSide .newPageContainer:hover {
+  background-color: #cccccc;
+}
+
+header .container .rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+header .container .rightSide .trash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  border: none;
+  margin-right: 15px;
+  border-radius: 4px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+header .container .rightSide .trash i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6d6d64;
+}
+
+header .container .rightSide .trash:hover {
+  background-color: #ff6289;
+}
+
+header .container .rightSide .trash:hover i {
+  color: #eeeeee;
+}
+
+header .container .rightSide .save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  border: none;
+  background-color: #413265;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+header .container .rightSide .save i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+header .container .rightSide .save p {
+  margin: 0;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+header .container .rightSide .save:hover {
+  background-color: #6d54a9;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 100%;
+}
+
+main #markdown,
+main #preview {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main #markdown .header,
+main #preview .header {
+  background-color: #7e7e7e;
+  padding: 15px;
+}
+
+main #markdown .header h2,
+main #preview .header h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  color: #eeeeee;
+}
+
+main #markdown #markdownInput,
+main #markdown #markdownPreview,
+main #preview #markdownInput,
+main #preview #markdownPreview {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+main #markdown #markdownInput,
+main #preview #markdownInput {
+  color: #333;
+  font-family: "Merriweather", serif;
+}
+
+main #markdown #markdownPreview,
+main #preview #markdownPreview {
+  cursor: default;
+}
+
+main #preview {
+  border-left: 1px solid #cccccc;
+}
+
+main #preview .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #preview .header i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #eeeeee;
+}
+/*# sourceMappingURL=styles.css.map */
